@@ -3,4 +3,6 @@ install: skip
 jobs:
   include:
   - stage: compile
+	script: ./mvn compile
   - stage: test
+	script: ./mvn test
