@@ -2,7 +2,9 @@ language: java
 install: skip
 jobs:
   include:
-  - stage: compile
-	script: ./mvn compile
-  - stage: test
-	script: ./mvn test
+    - stage: "Compilation"
+      name: "Compilation stg"
+      script: ./mvn compile
+    - stage: test
+      name: "Test stg"
+      script: ./mvn test
