@@ -5,6 +5,4 @@ jobs:
     - stage: "Compilation"
       name: "Compilation stg"
       script: mvn compile
-    - stage: test
-      name: "Test stg"
-      script: mvn test
+    - script: mvn test
