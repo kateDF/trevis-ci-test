@@ -4,7 +4,7 @@ jobs:
   include:
     - stage: "Compilation"
       name: "Compilation stg"
-      script: ./compile
+      script: mvn compile
     - stage: test
       name: "Test stg"
-      script: ./test
+      script: mvn test
