@@ -1,5 +1,6 @@
 language: java
 install: skip
-stages:
-  - compile
-  - test
+jobs:
+  include:
+  - stage: compile
+  - stage: test
