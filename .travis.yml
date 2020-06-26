@@ -2,7 +2,8 @@ language: java
 install: skip
 jobs:
   include:
-    - stage: "Compilation"
-      name: "Compilation stg"
+    - stage: "compile - test"
       before_script: mvn compile
-      script: mvn test
+      scripts:
+        - mvn compile
+        - mvn test
