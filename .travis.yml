@@ -3,7 +3,6 @@ install: skip
 jobs:
   include:
     - stage: "compile - test"
-      before_script: mvn compile
       scripts:
         - mvn compile
         - mvn test
